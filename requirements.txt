@@ -1,0 +1,10 @@
+certifi==2023.7.22
+numpy==1.26.0
+opencv-python==4.8.0.76
+Pillow==10.0.0
+pip==23.2.1
+setuptools==68.2.2
+torch==2.0.1
+typing_extensions==4.8.0
+wheel==0.41.2
+matplotlib==3.5.1
