@@ -6,7 +6,7 @@ import torch.nn.functional as F
 class ConvNet(nn.Module):
     def __init__(self):
         super(ConvNet, self).__init__()
-        self.conv1 = nn.Conv2d(1, 8, 5)
+        self.conv1 = nn.Conv2d(3, 8, 5)
         self.bn1 = nn.BatchNorm2d(8)
         self.conv2 = nn.Conv2d(8, 16, 9)
         self.bn2 = nn.BatchNorm2d(16)
