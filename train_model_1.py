@@ -3,7 +3,7 @@ import torch
 import random
 import numpy as np
 from torch.utils.data import DataLoader, TensorDataset
-from model_1 import ConvNet
+from model_2 import ConvNet
 from torchvision.utils import make_grid
 from torch import nn, optim
 import seaborn as sns
@@ -28,13 +28,11 @@ def to_dataloader(x, y):
     ts = TensorDataset(x, y)
     return DataLoader(ts, batch_size=64, shuffle=True, worker_init_fn=np.random.seed(random_seed))  # Ensures DataLoader's shuffling is reproducible
 
-
 model = ConvNet()
 print("Architecture of the MODE:", model)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
-
 
 train_df = pd.read_csv('dataset/sign_mnist_train.csv')
 test_df = pd.read_csv('dataset/sign_mnist_test.csv')
@@ -46,14 +44,13 @@ test_labels = to_tensor(test_df['label'])
 test_images = to_tensor(test_df[test_df.columns[1:]])
 
 train_dataloader = to_dataloader(train_images, train_labels)
-
 test_dataloader = to_dataloader(test_images, test_labels)
 
 # get some random training images
 dataiter = iter(train_dataloader)
 images, labels = next(dataiter)
 images = images.reshape(64, 1, 28, 28)
-
+images = images.repeat(1, 3, 1, 1)  # Convert to 3-channel
 
 grid = make_grid(images, nrow=16)
 grid = grid.numpy()
@@ -61,10 +58,8 @@ fig, ax = plt.subplots(dpi=300)
 ax.imshow(np.transpose(grid, (1, 2, 0)))
 ax.set_xticks([])
 ax.set_yticks([])
-fig.show()
+
 fig.savefig('plots/data-grid.pdf', dpi=300)
-
-
 
 @torch.no_grad()
 def get_accuracy(net, loader, device):
@@ -73,6 +68,7 @@ def get_accuracy(net, loader, device):
     for data in loader:
         images, labels = data
         images = images.reshape(-1, 1, 28, 28).float()
+        images = images.repeat(1, 3, 1, 1)  # Convert to 3-channel
         images = images.to(device)
         labels = labels.to(device)
         outputs = net(images)
@@ -80,7 +76,6 @@ def get_accuracy(net, loader, device):
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     return correct / total
-
 
 def train_net(net, trainloader, testloader, epochs=250, 
               criterion=nn.CrossEntropyLoss(), lr=0.001, patience=5, max_grad_norm=1.0):
@@ -104,6 +99,7 @@ def train_net(net, trainloader, testloader, epochs=250,
         for i, data in enumerate(trainloader, 0):
             inputs, labels = data
             inputs = inputs.reshape(-1, 1, 28, 28).float()
+            inputs = inputs.repeat(1, 3, 1, 1)  # Convert to 3-channel
             inputs = inputs.to(device)
             labels = labels.to(device)
             optimizer.zero_grad()
@@ -150,7 +146,6 @@ def train_net(net, trainloader, testloader, epochs=250,
                 training_acc=training_acc, 
                 testing_acc=testing_acc)
 
-
 # Check if the directory exists, and create it if not
 if not os.path.exists(Plot_Saving_Directory):
     os.makedirs(Plot_Saving_Directory)
@@ -163,6 +158,8 @@ outputs = train_net(model, train_dataloader, test_dataloader)
 torch.save(model.state_dict(), 'model.weights')
 print(outputs['training_loss'])
 print(outputs['epochs'])
+
+# Loss Plot
 sns.set(style='whitegrid')
 fig, ax = plt.subplots(dpi=300)
 sns.lineplot(x=outputs['epochs'], y=outputs['training_loss'], ax=ax, marker='o', color='b')
@@ -172,7 +169,7 @@ ax.set_title('Training Loss over Epochs')
 fig.tight_layout()
 fig.savefig(Plot_Saving_Directory+'/loss.pdf', dpi=300)
 
-
+# Training Accuracy Plot
 sns.set(style='whitegrid')
 fig, ax = plt.subplots(dpi=300)
 sns.lineplot(x=outputs['epochs'], y=outputs['training_acc'], ax=ax, marker='o', color='b')
@@ -182,7 +179,7 @@ ax.set_title('Training Accuracy over Epochs')
 fig.tight_layout()
 fig.savefig(Plot_Saving_Directory+'/train-acc.pdf', dpi=300)
 
-
+# Testing Accuracy Plot
 sns.set(style='whitegrid')
 fig, ax = plt.subplots(dpi=300)
 sns.lineplot(x=outputs['epochs'], y=outputs['testing_acc'], ax=ax, marker='o', color='b')
