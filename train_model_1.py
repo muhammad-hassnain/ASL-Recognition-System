@@ -3,12 +3,14 @@ import torch
 import random
 import numpy as np
 from torch.utils.data import DataLoader, TensorDataset
-from model_2 import ConvNet
+from model_1 import ConvNet
 from torchvision.utils import make_grid
 from torch import nn, optim
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+
 
 # Set the random seed for reproducibility
 random_seed = 42
@@ -29,7 +31,7 @@ def to_dataloader(x, y):
     return DataLoader(ts, batch_size=64, shuffle=True, worker_init_fn=np.random.seed(random_seed))  # Ensures DataLoader's shuffling is reproducible
 
 model = ConvNet()
-print("Architecture of the MODE:", model)
+print("Architecture of the MODEL:", model)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
@@ -155,7 +157,7 @@ else:
 
 model = ConvNet()
 outputs = train_net(model, train_dataloader, test_dataloader)
-torch.save(model.state_dict(), 'model.weights')
+torch.save(model.state_dict(), 'model_1.weights')
 print(outputs['training_loss'])
 print(outputs['epochs'])
 
@@ -188,3 +190,99 @@ ax.set_ylabel('Testing Accuracy')
 ax.set_title('Testing Accuracy over Epochs')
 fig.tight_layout()
 fig.savefig(Plot_Saving_Directory+'/test-acc.pdf', dpi=300)
+
+
+def calculate_metrics(net, trainloader, testloader, device):
+    # Initialize lists to store predictions and true labels
+    all_train_preds = []
+    all_train_labels = []
+    all_test_preds = []
+    all_test_labels = []
+    
+    # Get predictions and labels for training data
+    net.eval()
+    with torch.no_grad():
+        for data in trainloader:
+            images, labels = data
+            images = images.reshape(-1, 1, 28, 28).float()
+            images = images.repeat(1, 3, 1, 1)  
+            images = images.to(device)
+            labels = labels.to(device)
+            outputs = net(images)
+            _, predicted = torch.max(outputs.data, 1)
+            all_train_preds.extend(predicted.cpu().numpy())
+            all_train_labels.extend(labels.cpu().numpy())
+
+        # Get predictions and labels for test data
+        for data in testloader:
+            images, labels = data
+            images = images.reshape(-1, 1, 28, 28).float()
+            images = images.repeat(1, 3, 1, 1)  
+            images = images.to(device)
+            labels = labels.to(device)
+            outputs = net(images)
+            _, predicted = torch.max(outputs.data, 1)
+            all_test_preds.extend(predicted.cpu().numpy())
+            all_test_labels.extend(labels.cpu().numpy())
+
+    # Calculate weighted metrics for training data
+    train_accuracy = accuracy_score(all_train_labels, all_train_preds)
+    train_precision = precision_score(all_train_labels, all_train_preds, average='macro')
+    train_recall = recall_score(all_train_labels, all_train_preds, average='macro')
+    train_f1 = f1_score(all_train_labels, all_train_preds, average='macro')
+
+    # Calculate weighted metrics for test data
+    test_accuracy = accuracy_score(all_test_labels, all_test_preds)
+    test_precision = precision_score(all_test_labels, all_test_preds, average='macro')
+    test_recall = recall_score(all_test_labels, all_test_preds, average='macro')
+    test_f1 = f1_score(all_test_labels, all_test_preds, average='macro')
+
+    # Print the weighted metrics
+    print(f"\nTrain Metrics:")
+    print(f"Accuracy: {train_accuracy:.2f}")
+    print(f"Precision: {train_precision:.2f}")
+    print(f"Recall: {train_recall:.2f}")
+    print(f"F1-Score: {train_f1:.2f}")
+
+    print(f"\nTest Metrics:")
+    print(f"Accuracy: {test_accuracy:.2f}")
+    print(f"Precision: {test_precision:.2f}")
+    print(f"Recall: {test_recall:.2f}")
+    print(f"F1-Score: {test_f1:.2f}")
+
+    with open(Plot_Saving_Directory+"/metrics_output.txt", "w") as file:
+    # Print to the file using the 'file' argument
+        print("\nTrain Metrics:", file=file)
+        print(f"Accuracy: {train_accuracy:.2f}", file=file)
+        print(f"Precision: {train_precision:.2f}", file=file)
+        print(f"Recall: {train_recall:.2f}", file=file)
+        print(f"F1-Score: {train_f1:.2f}", file=file)
+        
+        print("\nTest Metrics:", file=file)
+        print(f"Accuracy: {test_accuracy:.2f}", file=file)
+        print(f"Precision: {test_precision:.2f}", file=file)
+        print(f"Recall: {test_recall:.2f}", file=file)
+        print(f"F1-Score: {test_f1:.2f}", file=file)
+
+# Call the function to calculate and print the metrics
+calculate_metrics(model, train_dataloader, test_dataloader, device)
+
+# Print model parameters
+print("Model Parameters:\n")
+for name, param in model.named_parameters():
+    print(f"Name: {name}")
+    print(f"Shape: {param.shape}")
+    print(f"Requires Grad: {param.requires_grad}")
+    print("-" * 40)
+
+# Open the file in write mode
+with open(Plot_Saving_Directory+"/model_parameters.txt", "w") as f:
+    # Write the header
+    f.write("Model Parameters:\n\n")
+    
+    # Loop through the model parameters and write to the file
+    for name, param in model.named_parameters():
+        f.write(f"Name: {name}\n")
+        f.write(f"Shape: {param.shape}\n")
+        f.write(f"Requires Grad: {param.requires_grad}\n")
+        f.write("-" * 40 + "\n")
