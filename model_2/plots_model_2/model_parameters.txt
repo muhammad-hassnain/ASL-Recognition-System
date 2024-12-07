@@ -1,0 +1,686 @@
+Model Parameters:
+
+Name: resnet.conv1.weight
+Shape: torch.Size([64, 3, 7, 7])
+Requires Grad: False
+----------------------------------------
+Name: resnet.bn1.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.bn1.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.conv1.weight
+Shape: torch.Size([64, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn1.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn1.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.conv2.weight
+Shape: torch.Size([64, 64, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn2.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn2.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.conv3.weight
+Shape: torch.Size([256, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn3.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.bn3.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.downsample.0.weight
+Shape: torch.Size([256, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.downsample.1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.0.downsample.1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.conv1.weight
+Shape: torch.Size([64, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn1.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn1.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.conv2.weight
+Shape: torch.Size([64, 64, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn2.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn2.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.conv3.weight
+Shape: torch.Size([256, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn3.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.1.bn3.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.conv1.weight
+Shape: torch.Size([64, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn1.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn1.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.conv2.weight
+Shape: torch.Size([64, 64, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn2.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn2.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.conv3.weight
+Shape: torch.Size([256, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn3.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer1.2.bn3.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.conv1.weight
+Shape: torch.Size([128, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn1.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn1.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.conv2.weight
+Shape: torch.Size([128, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn2.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn2.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.conv3.weight
+Shape: torch.Size([512, 128, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn3.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.bn3.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.downsample.0.weight
+Shape: torch.Size([512, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.downsample.1.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.0.downsample.1.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.conv1.weight
+Shape: torch.Size([128, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn1.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn1.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.conv2.weight
+Shape: torch.Size([128, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn2.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn2.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.conv3.weight
+Shape: torch.Size([512, 128, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn3.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.1.bn3.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.conv1.weight
+Shape: torch.Size([128, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn1.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn1.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.conv2.weight
+Shape: torch.Size([128, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn2.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn2.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.conv3.weight
+Shape: torch.Size([512, 128, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn3.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.2.bn3.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.conv1.weight
+Shape: torch.Size([128, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn1.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn1.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.conv2.weight
+Shape: torch.Size([128, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn2.weight
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn2.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.conv3.weight
+Shape: torch.Size([512, 128, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn3.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer2.3.bn3.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.conv1.weight
+Shape: torch.Size([256, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.downsample.0.weight
+Shape: torch.Size([1024, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.downsample.1.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.0.downsample.1.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.conv1.weight
+Shape: torch.Size([256, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.1.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.conv1.weight
+Shape: torch.Size([256, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.2.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.conv1.weight
+Shape: torch.Size([256, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.3.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.conv1.weight
+Shape: torch.Size([256, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.4.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.conv1.weight
+Shape: torch.Size([256, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn1.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn1.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.conv2.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn2.weight
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn2.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.conv3.weight
+Shape: torch.Size([1024, 256, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn3.weight
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer3.5.bn3.bias
+Shape: torch.Size([1024])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.conv1.weight
+Shape: torch.Size([512, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn1.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn1.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.conv2.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn2.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn2.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.conv3.weight
+Shape: torch.Size([2048, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn3.weight
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.bn3.bias
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.downsample.0.weight
+Shape: torch.Size([2048, 1024, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.downsample.1.weight
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.0.downsample.1.bias
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.conv1.weight
+Shape: torch.Size([512, 2048, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn1.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn1.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.conv2.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn2.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn2.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.conv3.weight
+Shape: torch.Size([2048, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn3.weight
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.1.bn3.bias
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.conv1.weight
+Shape: torch.Size([512, 2048, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn1.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn1.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.conv2.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn2.weight
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn2.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.conv3.weight
+Shape: torch.Size([2048, 512, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn3.weight
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.layer4.2.bn3.bias
+Shape: torch.Size([2048])
+Requires Grad: False
+----------------------------------------
+Name: resnet.fc.weight
+Shape: torch.Size([1000, 2048])
+Requires Grad: True
+----------------------------------------
+Name: resnet.fc.bias
+Shape: torch.Size([1000])
+Requires Grad: True
+----------------------------------------
+Name: classifier.0.weight
+Shape: torch.Size([1024, 2048])
+Requires Grad: True
+----------------------------------------
+Name: classifier.0.bias
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.weight
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.bias
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.weight
+Shape: torch.Size([256, 1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.5.weight
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.5.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.8.weight
+Shape: torch.Size([26, 256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.8.bias
+Shape: torch.Size([26])
+Requires Grad: True
+----------------------------------------

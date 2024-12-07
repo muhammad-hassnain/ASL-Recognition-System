@@ -1,0 +1,674 @@
+Model Parameters:
+
+Name: mobilenet.features.0.0.weight
+Shape: torch.Size([32, 3, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.0.1.weight
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.0.1.bias
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.0.0.weight
+Shape: torch.Size([32, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.0.1.weight
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.0.1.bias
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.1.weight
+Shape: torch.Size([16, 32, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.2.weight
+Shape: torch.Size([16])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.1.conv.2.bias
+Shape: torch.Size([16])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.0.0.weight
+Shape: torch.Size([96, 16, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.0.1.weight
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.0.1.bias
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.1.0.weight
+Shape: torch.Size([96, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.1.1.weight
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.1.1.bias
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.2.weight
+Shape: torch.Size([24, 96, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.3.weight
+Shape: torch.Size([24])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.2.conv.3.bias
+Shape: torch.Size([24])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.0.0.weight
+Shape: torch.Size([144, 24, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.0.1.weight
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.0.1.bias
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.1.0.weight
+Shape: torch.Size([144, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.1.1.weight
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.1.1.bias
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.2.weight
+Shape: torch.Size([24, 144, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.3.weight
+Shape: torch.Size([24])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.3.conv.3.bias
+Shape: torch.Size([24])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.0.0.weight
+Shape: torch.Size([144, 24, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.0.1.weight
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.0.1.bias
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.1.0.weight
+Shape: torch.Size([144, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.1.1.weight
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.1.1.bias
+Shape: torch.Size([144])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.2.weight
+Shape: torch.Size([32, 144, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.3.weight
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.4.conv.3.bias
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.0.0.weight
+Shape: torch.Size([192, 32, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.0.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.0.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.1.0.weight
+Shape: torch.Size([192, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.1.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.1.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.2.weight
+Shape: torch.Size([32, 192, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.3.weight
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.5.conv.3.bias
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.0.0.weight
+Shape: torch.Size([192, 32, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.0.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.0.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.1.0.weight
+Shape: torch.Size([192, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.1.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.1.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.2.weight
+Shape: torch.Size([32, 192, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.3.weight
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.6.conv.3.bias
+Shape: torch.Size([32])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.0.0.weight
+Shape: torch.Size([192, 32, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.0.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.0.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.1.0.weight
+Shape: torch.Size([192, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.1.1.weight
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.1.1.bias
+Shape: torch.Size([192])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.2.weight
+Shape: torch.Size([64, 192, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.3.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.7.conv.3.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.0.0.weight
+Shape: torch.Size([384, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.0.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.0.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.1.0.weight
+Shape: torch.Size([384, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.1.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.1.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.2.weight
+Shape: torch.Size([64, 384, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.3.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.8.conv.3.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.0.0.weight
+Shape: torch.Size([384, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.0.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.0.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.1.0.weight
+Shape: torch.Size([384, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.1.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.1.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.2.weight
+Shape: torch.Size([64, 384, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.3.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.9.conv.3.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.0.0.weight
+Shape: torch.Size([384, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.0.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.0.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.1.0.weight
+Shape: torch.Size([384, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.1.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.1.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.2.weight
+Shape: torch.Size([64, 384, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.3.weight
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.10.conv.3.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.0.0.weight
+Shape: torch.Size([384, 64, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.0.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.0.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.1.0.weight
+Shape: torch.Size([384, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.1.1.weight
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.1.1.bias
+Shape: torch.Size([384])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.2.weight
+Shape: torch.Size([96, 384, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.3.weight
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.11.conv.3.bias
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.0.0.weight
+Shape: torch.Size([576, 96, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.0.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.0.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.1.0.weight
+Shape: torch.Size([576, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.1.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.1.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.2.weight
+Shape: torch.Size([96, 576, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.3.weight
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.12.conv.3.bias
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.0.0.weight
+Shape: torch.Size([576, 96, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.0.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.0.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.1.0.weight
+Shape: torch.Size([576, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.1.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.1.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.2.weight
+Shape: torch.Size([96, 576, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.3.weight
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.13.conv.3.bias
+Shape: torch.Size([96])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.0.0.weight
+Shape: torch.Size([576, 96, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.0.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.0.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.1.0.weight
+Shape: torch.Size([576, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.1.1.weight
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.1.1.bias
+Shape: torch.Size([576])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.2.weight
+Shape: torch.Size([160, 576, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.3.weight
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.14.conv.3.bias
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.0.0.weight
+Shape: torch.Size([960, 160, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.0.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.0.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.1.0.weight
+Shape: torch.Size([960, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.1.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.1.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.2.weight
+Shape: torch.Size([160, 960, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.3.weight
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.15.conv.3.bias
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.0.0.weight
+Shape: torch.Size([960, 160, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.0.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.0.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.1.0.weight
+Shape: torch.Size([960, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.1.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.1.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.2.weight
+Shape: torch.Size([160, 960, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.3.weight
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.16.conv.3.bias
+Shape: torch.Size([160])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.0.0.weight
+Shape: torch.Size([960, 160, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.0.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.0.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.1.0.weight
+Shape: torch.Size([960, 1, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.1.1.weight
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.1.1.bias
+Shape: torch.Size([960])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.2.weight
+Shape: torch.Size([320, 960, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.3.weight
+Shape: torch.Size([320])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.17.conv.3.bias
+Shape: torch.Size([320])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.18.0.weight
+Shape: torch.Size([1280, 320, 1, 1])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.18.1.weight
+Shape: torch.Size([1280])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.features.18.1.bias
+Shape: torch.Size([1280])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.classifier.1.weight
+Shape: torch.Size([1000, 1280])
+Requires Grad: False
+----------------------------------------
+Name: mobilenet.classifier.1.bias
+Shape: torch.Size([1000])
+Requires Grad: False
+----------------------------------------
+Name: classifier.0.weight
+Shape: torch.Size([1024, 1280])
+Requires Grad: True
+----------------------------------------
+Name: classifier.0.bias
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.weight
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.bias
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.weight
+Shape: torch.Size([256, 1024])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.5.weight
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.5.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.8.weight
+Shape: torch.Size([26, 256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.8.bias
+Shape: torch.Size([26])
+Requires Grad: True
+----------------------------------------

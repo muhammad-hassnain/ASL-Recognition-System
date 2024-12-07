@@ -1,0 +1,154 @@
+Model Parameters:
+
+Name: vgg.features.0.weight
+Shape: torch.Size([64, 3, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.0.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.2.weight
+Shape: torch.Size([64, 64, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.2.bias
+Shape: torch.Size([64])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.5.weight
+Shape: torch.Size([128, 64, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.5.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.7.weight
+Shape: torch.Size([128, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.7.bias
+Shape: torch.Size([128])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.10.weight
+Shape: torch.Size([256, 128, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.10.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.12.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.12.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.14.weight
+Shape: torch.Size([256, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.14.bias
+Shape: torch.Size([256])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.17.weight
+Shape: torch.Size([512, 256, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.17.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.19.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.19.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.21.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.21.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.24.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.24.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.26.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.26.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.28.weight
+Shape: torch.Size([512, 512, 3, 3])
+Requires Grad: False
+----------------------------------------
+Name: vgg.features.28.bias
+Shape: torch.Size([512])
+Requires Grad: False
+----------------------------------------
+Name: vgg.classifier.0.weight
+Shape: torch.Size([4096, 25088])
+Requires Grad: True
+----------------------------------------
+Name: vgg.classifier.0.bias
+Shape: torch.Size([4096])
+Requires Grad: True
+----------------------------------------
+Name: vgg.classifier.3.weight
+Shape: torch.Size([4096, 4096])
+Requires Grad: True
+----------------------------------------
+Name: vgg.classifier.3.bias
+Shape: torch.Size([4096])
+Requires Grad: True
+----------------------------------------
+Name: vgg.classifier.6.weight
+Shape: torch.Size([1000, 4096])
+Requires Grad: True
+----------------------------------------
+Name: vgg.classifier.6.bias
+Shape: torch.Size([1000])
+Requires Grad: True
+----------------------------------------
+Name: classifier.0.weight
+Shape: torch.Size([256, 512])
+Requires Grad: True
+----------------------------------------
+Name: classifier.0.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.weight
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.1.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.weight
+Shape: torch.Size([26, 256])
+Requires Grad: True
+----------------------------------------
+Name: classifier.4.bias
+Shape: torch.Size([26])
+Requires Grad: True
+----------------------------------------

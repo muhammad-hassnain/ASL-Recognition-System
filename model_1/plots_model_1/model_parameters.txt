@@ -1,0 +1,42 @@
+Model Parameters:
+
+Name: conv1.weight
+Shape: torch.Size([8, 3, 3, 3])
+Requires Grad: True
+----------------------------------------
+Name: conv1.bias
+Shape: torch.Size([8])
+Requires Grad: True
+----------------------------------------
+Name: bn1.weight
+Shape: torch.Size([8])
+Requires Grad: True
+----------------------------------------
+Name: bn1.bias
+Shape: torch.Size([8])
+Requires Grad: True
+----------------------------------------
+Name: fc2.weight
+Shape: torch.Size([1024, 5408])
+Requires Grad: True
+----------------------------------------
+Name: fc2.bias
+Shape: torch.Size([1024])
+Requires Grad: True
+----------------------------------------
+Name: fc3.weight
+Shape: torch.Size([256, 1024])
+Requires Grad: True
+----------------------------------------
+Name: fc3.bias
+Shape: torch.Size([256])
+Requires Grad: True
+----------------------------------------
+Name: fc4.weight
+Shape: torch.Size([26, 256])
+Requires Grad: True
+----------------------------------------
+Name: fc4.bias
+Shape: torch.Size([26])
+Requires Grad: True
+----------------------------------------

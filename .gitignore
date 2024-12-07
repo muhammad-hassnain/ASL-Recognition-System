@@ -1,3 +1,11 @@
 __pycache__
 .DS_Store
 ecs_271
+__pycache__
+.DS_Store
+ecs_271
+dataset
+model_1/model_1.weights
+model_2/model_2.weights
+model_3/model_3.weights
+model_4/model_4.weights
