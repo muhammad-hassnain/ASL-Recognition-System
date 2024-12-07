@@ -100,7 +100,7 @@ python3 video_model_{x}.py
 - Ensure all dependencies are correctly installed
 - Check camera permissions
 - Verify Python and pip versions
-- Confirm GPU drivers for deep learning models
+- Confirm GPU drivers for deep-learning models
 
 ## Contact and Support
 For issues, inquiries, or collaboration:
@@ -108,9 +108,9 @@ For issues, inquiries, or collaboration:
 - **Email**: nikhan@ucdavis.edu
 - **Member 2**: Muhammad Hassnain
 - **Email**: mhassnain@ucdavis.edu
-- - **Developer 3**: Md. Nabil
+- **Developer 3**: Md. Nabil
 - **Email**: mnabil@ucdavis.edu
-- 
+
 ## License
 MIT License
 
