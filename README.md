@@ -114,7 +114,7 @@ For issues, inquiries, or collaboration:
 ## License
 MIT License
 
-Copyright (c) 2024 Nafiz Imtiaz Khan
+Copyright (c) 2024 The Regents of the University of California, Davis campus. All Rights Reserved. Used with permission.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
