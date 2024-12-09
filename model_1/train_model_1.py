@@ -36,8 +36,8 @@ print("Architecture of the MODEL:", model)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
-train_df = pd.read_csv('dataset/sign_mnist_train.csv')
-test_df = pd.read_csv('dataset/sign_mnist_test.csv')
+train_df = pd.read_csv('../dataset/sign_mnist_train.csv')
+test_df = pd.read_csv('../dataset/sign_mnist_test.csv')
 
 train_labels = to_tensor(train_df['label'])
 train_images = to_tensor(train_df[train_df.columns[1:]])
@@ -61,7 +61,7 @@ ax.imshow(np.transpose(grid, (1, 2, 0)))
 ax.set_xticks([])
 ax.set_yticks([])
 
-fig.savefig('plots/data-grid.pdf', dpi=300)
+fig.savefig('plots_model_1/data-grid.pdf', dpi=300)
 
 @torch.no_grad()
 def get_accuracy(net, loader, device):

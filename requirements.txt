@@ -8,3 +8,9 @@ torch==2.0.1
 typing_extensions==4.8.0
 wheel==0.41.2
 matplotlib==3.5.1
+mediapipe
+pyqt6
+pandas 
+torchvision
+seaborn
+scikit-learn

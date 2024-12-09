@@ -4,6 +4,7 @@ ecs_271
 __pycache__
 .DS_Store
 ecs_271
+asl_env
 dataset
 model_1/model_1.weights
 model_2/model_2.weights
