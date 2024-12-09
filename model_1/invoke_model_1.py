@@ -36,8 +36,8 @@ print("Architecture of the MODEL:", model)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(device)
 
-train_df = pd.read_csv('dataset/sign_mnist_train.csv')
-test_df = pd.read_csv('dataset/sign_mnist_test.csv')
+train_df = pd.read_csv('../dataset/sign_mnist_train.csv')
+test_df = pd.read_csv('../dataset/sign_mnist_test.csv')
 
 train_labels = to_tensor(train_df['label'])
 train_images = to_tensor(train_df[train_df.columns[1:]])
@@ -61,7 +61,7 @@ ax.imshow(np.transpose(grid, (1, 2, 0)))
 ax.set_xticks([])
 ax.set_yticks([])
 
-fig.savefig('plots/data-grid.pdf', dpi=300)
+# fig.savefig('plots/data-grid.pdf', dpi=300)
 
 @torch.no_grad()
 def get_accuracy(net, loader, device):
@@ -243,30 +243,30 @@ def calculate_metrics(net, trainloader, testloader, device):
 
     # Print the weighted metrics
     print(f"\nTrain Metrics:")
-    print(f"Accuracy: {train_accuracy:.2f}")
-    print(f"Precision: {train_precision:.2f}")
-    print(f"Recall: {train_recall:.2f}")
-    print(f"F1-Score: {train_f1:.2f}")
+    print(f"Accuracy: {train_accuracy*100:.2f}")
+    print(f"Precision: {train_precision*100:.2f}")
+    print(f"Recall: {train_recall*100:.2f}")
+    print(f"F1-Score: {train_f1*100:.2f}")
 
     print(f"\nTest Metrics:")
-    print(f"Accuracy: {test_accuracy:.2f}")
-    print(f"Precision: {test_precision:.2f}")
-    print(f"Recall: {test_recall:.2f}")
-    print(f"F1-Score: {test_f1:.2f}")
+    print(f"Accuracy: {test_accuracy*100:.2f}")
+    print(f"Precision: {test_precision*100:.2f}")
+    print(f"Recall: {test_recall*100:.2f}")
+    print(f"F1-Score: {test_f1*100:.2f}")
 
     with open(Plot_Saving_Directory+"/metrics_output.txt", "w") as file:
     # Print to the file using the 'file' argument
         print("\nTrain Metrics:", file=file)
-        print(f"Accuracy: {train_accuracy:.2f}", file=file)
-        print(f"Precision: {train_precision:.2f}", file=file)
-        print(f"Recall: {train_recall:.2f}", file=file)
-        print(f"F1-Score: {train_f1:.2f}", file=file)
+        print(f"Accuracy: {train_accuracy*100:.2f}", file=file)
+        print(f"Precision: {train_precision*100:.2f}", file=file)
+        print(f"Recall: {train_recall*100:.2f}", file=file)
+        print(f"F1-Score: {train_f1*100:.2f}", file=file)
         
         print("\nTest Metrics:", file=file)
-        print(f"Accuracy: {test_accuracy:.2f}", file=file)
-        print(f"Precision: {test_precision:.2f}", file=file)
-        print(f"Recall: {test_recall:.2f}", file=file)
-        print(f"F1-Score: {test_f1:.2f}", file=file)
+        print(f"Accuracy: {test_accuracy*100:.2f}", file=file)
+        print(f"Precision: {test_precision*100:.2f}", file=file)
+        print(f"Recall: {test_recall*100:.2f}", file=file)
+        print(f"F1-Score: {test_f1*100:.2f}", file=file)
 
 # Call the function to calculate and print the metrics
 calculate_metrics(model, train_dataloader, test_dataloader, device)

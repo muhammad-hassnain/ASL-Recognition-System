@@ -1,12 +1,12 @@
 
 Train Metrics:
-Accuracy: 1.00
-Precision: 1.00
-Recall: 1.00
-F1-Score: 1.00
+Accuracy: 99.99
+Precision: 99.99
+Recall: 99.99
+F1-Score: 99.99
 
 Test Metrics:
-Accuracy: 0.97
-Precision: 0.97
-Recall: 0.97
-F1-Score: 0.97
+Accuracy: 97.04
+Precision: 96.81
+Recall: 96.97
+F1-Score: 96.84
