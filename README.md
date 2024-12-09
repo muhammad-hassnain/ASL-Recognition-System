@@ -1,5 +1,7 @@
 # ASL Hand Signs Recognition Project
 
+⚠️ WIP - the readme does not reflect the latest chanes and features might not work. 
+
 ## Overview
 This is a comprehensive deep learning project for American Sign Language (ASL) hand sign recognition developed as part of the ECS 271 Fall'24 Course. The project features a sophisticated machine learning pipeline with four advanced neural network architectures and a user-friendly PyQt-based real-time recognition frontend.
 
