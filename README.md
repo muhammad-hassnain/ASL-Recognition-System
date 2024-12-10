@@ -18,7 +18,7 @@ This is a comprehensive deep learning project for American Sign Language (ASL) h
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/muhammad-hassnain/271_Project](https://github.com/muhammad-hassnain/271_Project).git
+git clone https://github.com/muhammad-hassnain/ASL-Recognition-System.git
 cd 271_Project
 ```
 
