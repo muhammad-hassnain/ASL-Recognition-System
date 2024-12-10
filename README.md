@@ -138,4 +138,3 @@ SOFTWARE.
 - ECS 271 Course, Fall'24
 - Deep Learning Research Group
 - Open-source libraries and frameworks used
-```
