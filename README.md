@@ -107,7 +107,7 @@ For issues, inquiries, or collaboration:
 - **Email**: nikhan@ucdavis.edu
 - **Member 2**: Muhammad Hassnain
 - **Email**: mhassnain@ucdavis.edu
-- **Member 3**: Md. Nabil
+- **Member 3**: Md Raian Latif Nabil
 - **Email**: mnabil@ucdavis.edu
 
 ## License
