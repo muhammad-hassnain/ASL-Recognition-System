@@ -3,20 +3,20 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import models
 
-class MobileNetV2ConvNet(nn.Module):
+class DenseNet121ConvNet(nn.Module):
     def __init__(self, num_classes=26, pretrained=True):
-        super(MobileNetV2ConvNet, self).__init__()
+        super(DenseNet121ConvNet, self).__init__()
         
-        # Load pre-trained MobileNetV2 with default weights
-        self.mobilenet = models.mobilenet_v2(weights=models.MobileNet_V2_Weights.DEFAULT)
+        # Load pre-trained DenseNet121 with default weights
+        self.densenet = models.densenet121(pretrained=pretrained)
         
-        # Freeze all layers in MobileNetV2 (optional)
-        for param in self.mobilenet.parameters():
+        # Freeze all layers in DenseNet121 (optional)
+        for param in self.densenet.parameters():
             param.requires_grad = False
         
         # Custom classification head
-        # Get the number of input features from MobileNetV2 after the convolutional layers
-        feature_dim = self.mobilenet.classifier[1].in_features
+        # Get the number of input features from DenseNet121 after the convolutional layers
+        feature_dim = self.densenet.classifier.in_features
         
         # Classification layers
         self.classifier = nn.Sequential(
@@ -34,11 +34,11 @@ class MobileNetV2ConvNet(nn.Module):
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
-        # Resize the input to 224x224 (MobileNetV2 input size)
+        # Resize the input to 224x224 (DenseNet input size)
         x = F.interpolate(x, size=(224, 224), mode='bicubic', align_corners=False)
         
-        # Extract features using MobileNetV2
-        x = self.mobilenet.features(x)
+        # Extract features using DenseNet121
+        x = self.densenet.features(x)
         
         # Global Average Pooling (reduce spatial dimensions to a single value per channel)
         x = F.adaptive_avg_pool2d(x, (1, 1))
