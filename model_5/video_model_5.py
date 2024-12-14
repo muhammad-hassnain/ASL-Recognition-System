@@ -5,14 +5,14 @@ from PyQt6.QtCore import QTimer, Qt
 from PyQt6.QtGui import QImage, QPixmap
 from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QPushButton, QVBoxLayout, QWidget, QMessageBox
 from PIL import Image
-from model_4_api import ModelAPI
+from model_5_api import ModelAPI
 
 class HandSignsML(QMainWindow):
     def __init__(self):
         super().__init__()
 
         # Initialize the model and video capture
-        self.modelApi = ModelAPI('model_4.weights')
+        self.modelApi = ModelAPI('model_5.weights')
         self.capture_device = cv2.VideoCapture(0)
         if not self.capture_device.isOpened():
             QMessageBox.critical(self, "Camera Error", "Unable to access the camera.")
